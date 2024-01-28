@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.main-container {
+  background: black;
+  width: 100%;
+  height: 110vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-heading {
+  font-size: 50px;
+}
+.sub-heading {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+.about-container {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px;
+}
+
+.about-heading {
+  margin: 10px 0;
+  font-size: 30px;
+}
+
+.about-para {
+  text-align: left;
+  line-height: 22px;
+}
+
+.skills-container {
+  margin-top: 70px;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px;
+}
+
+.skills-set {
+  display: grid;
+  grid-template-columns: repeat(5, 110px);
+  gap: 10px;
+}
+
+.skill-box {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.project-container {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  position: relative;
+  background-color: black;
+  width: 360px;
+  height: 455px;
+}
+
+.project-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.project-content {
+  padding: 10px 20px;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 0%;
+  color: white;
+}
+
+@media only screen and (max-width: 1150px) {
+  .project-card {
+    width: 300px;
+    height: 400px;
+  }
+  .skills-set {
+    grid-template-columns: repeat(4, 110px);
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .project-card {
+    width: 250px;
+    height: 380px;
+  }
+  .project-content {
+    font-size: 14px;
+  }
+  .skills-set {
+    grid-template-columns: repeat(3, 110px);
+  }
+}
+@media only screen and (max-width: 830px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    row-gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .about {
+    width: 90%;
+  }
+
+  .skills-container {
+    margin-top: 70px;
+    width: 50%;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    row-gap: 50px;
+  }
+  .skills-set {
+    grid-template-columns: repeat(2, 110px);
+  }
+}
